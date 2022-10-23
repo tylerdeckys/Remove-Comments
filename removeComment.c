@@ -28,7 +28,7 @@ int getline2(char out[])
         i++;
     }
 
-    out[i] = '\0';
+    out[i] = '\0'; 
     return i;
 }
 
