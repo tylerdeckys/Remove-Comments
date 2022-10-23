@@ -28,7 +28,7 @@ int getline2(char out[])
         i++;
     }
 
-    out[i] = '\0'; 
+    out[i] = '\0';
     return i;
 }
 
@@ -85,7 +85,7 @@ int removeComments(char str[],int len)
         {
             while(str[i] != '\n')
             {
-                str[i] = 'a';
+                str[i] = '\b';
                 i++;
             }
 
@@ -104,13 +104,13 @@ int removeComments(char str[],int len)
 
                 if(!((str[i] == '*') && (str[i+1] == '/')))
                 {
-                    str[i] = 'a';
+                    str[i] = '\b';
                     i++;
                 }
             }
 
-            str[i] = 'a';
-            str[i+1] = 'a';
+            str[i] = '\b';
+            str[i+1] = '\b';
 
         }
 
